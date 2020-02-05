@@ -1,0 +1,25 @@
+{% for show in tv_shows %}
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <a href="{{ path('tv_shows_view', { slug: show.slug }) }}">
+                <img class="bd-placeholder-img card-img-top"
+                     src="{{ asset(thumb_path(show)) }}"
+                     alt="{{ show.title }}"
+                />
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{{ path('tv_shows_view', { slug: show.slug }) }}">{{ show.title }}</a>
+                </h5>
+                <p class="card-text text-muted">{{ show.genres|join(', ') }}</p>
+                <p class="card-text text-muted">{{ show.episodeCount }} Episodes</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a class="btn btn-sm btn-outline-secondary" href="#">Episodes</a>
+                    </div>
+                    <small class="text-muted">{{ show.rating }} / 10 ★</small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

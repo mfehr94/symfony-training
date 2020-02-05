@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block title 'Overview - ' ~ parent() %}
+
+{% block main %}
+    <div class="row">
+        {{ include('tv_shows/_list.html.twig', { tv_shows: tv_shows }, with_context = false) }}
+    </div>
+{% endblock %}

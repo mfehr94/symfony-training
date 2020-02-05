@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block title 'contact.title'|trans ~ ' - ' ~ parent() %}
+
+{% form_theme form_view 'bootstrap_4_layout.html.twig' %}
+
+{% block main %}
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <h1>Create your account</h1>
+            <form action="{{ path('register') }}" method="post" novalidate>
+                {{ form_widget(form_view) }}
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block title 'contact.title'|trans ~ ' - ' ~ parent() %}
+
+{% block main %}
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <h1>{{ 'contact.title'|trans }}</h1>
+            {{ form_start(form_view) }}
+            {{ form_widget(form_view) }}
+            <button type="submit" class="btn btn-primary">{{ 'contact.submit'|trans }}</button>
+            {{ form_end(form_view) }}
+        </div>
+    </div>
+{% endblock %}

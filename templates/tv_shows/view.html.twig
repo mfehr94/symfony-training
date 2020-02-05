@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+       {% block title tv_show.title ~ parent() %}
+{% block main %}
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <div class="d-flex flex-column justify-content-start">
+                <div class="mb-auto">
+                    <h1>{{ tv_show.title }}</h1>
+                    <p>{{ tv_show.description }}</p>
+                </div>
+                <a href="#" class="ml-auto btn btn-primary">🍿 Watch TV Show A on StreamNow</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img class="img-thumbnail" src="{{ asset(thumb_path(tv_show)) }}"
+                 alt="{{ tv_show.title }}"/>
+        </div>
+    </div>
+    <div class="row bg-white pt-3 rounded-lg">
+        <div class="col-md-6">
+            <h2>Facts</h2>
+            <ul class="list-unstyled">
+                <li><strong>Genre:</strong> {{ tv_show.genres|join(', ') }}</li>
+                <li><strong>Rating:</strong> {{ tv_show.rating }}</li>
+                <li><strong>Episodes:</strong> {{ tv_show.episodeCount }}</li>
+            </ul>
+            <h2>Cast</h2>
+            <ul>
+                {% for actor in tv_show.castMembers %}
+                    <li>{{ actor.name }} <span class="small">({{ actor.birthYear }})</span></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Episodes</h2>
+            <ul class="list-group list-group-flush">
+                {% for episode in tv_show.episodes %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ episode.title }}
+                        <span class="badge badge-secondary badge-pill">{{ episode.episodeKey }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

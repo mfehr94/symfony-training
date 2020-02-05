@@ -1,0 +1,28 @@
+basics:
+    title: 'TV Show Catalog'
+    training: 'Symfony Training'
+    training_app: 'This is a example application for training purposes only.'
+    back_to_top: 'Back to top'
+    documentation: 'Symfony Documentation'
+
+menu:
+    tv_shows: 'TV Shows'
+    contact: 'Contact'
+
+tv_show:
+    list: 'Overview'
+    episodes: 'Episodes'
+    no_episodes: 'no episodes found'
+    facts: 'Facts'
+    cast: 'Cast'
+    no_cast: 'no cast members found'
+    genre: 'Genre'
+    rating: 'Rating'
+    watch: 'Watch %title% on StreamNow'
+
+contact:
+    title: 'Contact Us'
+    sender: 'Your email'
+    subject: 'What is this about'
+    content: 'Tell us in detail'
+    submit: 'Send'
