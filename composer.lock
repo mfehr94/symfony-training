@@ -5897,16 +5897,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "b2cd6ea94f82b0d018dd26275f18392881cab6d1"
+                "reference": "55a84ceb5f68e2dc836708e51f1ce1e5f7cecb7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/b2cd6ea94f82b0d018dd26275f18392881cab6d1",
-                "reference": "b2cd6ea94f82b0d018dd26275f18392881cab6d1",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/55a84ceb5f68e2dc836708e51f1ce1e5f7cecb7b",
+                "reference": "55a84ceb5f68e2dc836708e51f1ce1e5f7cecb7b",
                 "shasum": ""
             },
             "require": {
@@ -5985,20 +5985,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-02-04T11:13:36+00:00"
         },
         {
             "name": "symfony/security-core",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "02da7f55df0a144972b0e012810d6515b5adf3fb"
+                "reference": "e185d3918539a9a7c794c20baa18f5e0333a826d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/02da7f55df0a144972b0e012810d6515b5adf3fb",
-                "reference": "02da7f55df0a144972b0e012810d6515b5adf3fb",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/e185d3918539a9a7c794c20baa18f5e0333a826d",
+                "reference": "e185d3918539a9a7c794c20baa18f5e0333a826d",
                 "shasum": ""
             },
             "require": {
@@ -6068,11 +6068,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-03-03T16:55:00+00:00"
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.2.2",
+            "version": "v5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
@@ -6140,7 +6140,7 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
@@ -6203,16 +6203,16 @@
         },
         {
             "name": "symfony/security-http",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "c275805b0205403be4124b9cdef6eea72b09a28d"
+                "reference": "1a69306ec4185de37df2350cf3d6a529b14b21f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/c275805b0205403be4124b9cdef6eea72b09a28d",
-                "reference": "c275805b0205403be4124b9cdef6eea72b09a28d",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/1a69306ec4185de37df2350cf3d6a529b14b21f0",
+                "reference": "1a69306ec4185de37df2350cf3d6a529b14b21f0",
                 "shasum": ""
             },
             "require": {
@@ -6274,7 +6274,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-02-14T12:29:41+00:00"
         },
         {
             "name": "symfony/serializer",
